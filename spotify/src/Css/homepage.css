@@ -1,0 +1,10 @@
+.home-page-grid {
+  grid-template-columns: 1fr 4.7fr;
+}
+.home-icon {
+  stroke: white;
+}
+.divider-line {
+  border-color: #343a40;
+  height: 0.5px;
+}
