@@ -4,7 +4,7 @@ This project is clone of music player app Spotify.In this project user can login
 
 ### Technology used in this project :- 
 
- - React
+ - React, Redux
  - Html, Css
  - Python Django
  - Django Rest Framework
