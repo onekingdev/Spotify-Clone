@@ -8,6 +8,9 @@ env.js
 server/node_modules
 # testing
 /coverage
+*.sqlite3
+env
+*.cache
 
 # production
 /build

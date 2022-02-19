@@ -4,11 +4,13 @@ import unsplashApi from "../Api/unsplashApi";
 const code = new URLSearchParams(window.location.search).get("code");
 
 export const get_login = () => async (dispatch) => {
-  const response = await axios.post("http://localhost:3001/login/", {
+  if (code) {
+  const response = await axios.post("http://localhost:8000/api/login/", {
     code,
   });
   window.history.pushState({}, null, "/");
   dispatch({ type: "LOGIN", payload: response.data.access_token });
+}
 };
 
 export const get_logout = () => (dispatch) => {
